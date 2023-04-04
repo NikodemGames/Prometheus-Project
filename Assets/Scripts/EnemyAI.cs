@@ -59,6 +59,7 @@ public class EnemyAI : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
             animator.SetBool("isMoving", false);
+
         }
     }
 
