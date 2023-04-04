@@ -11,10 +11,12 @@ public class EnemyAI : MonoBehaviour
 
     private Rigidbody rb;
     private bool isPlayerDetected = false;
+    private Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void FixedUpdate()
@@ -51,10 +53,12 @@ public class EnemyAI : MonoBehaviour
         {
             Vector3 direction = player.position - transform.position;
             rb.velocity = direction.normalized * moveSpeed;
+            animator.SetBool("isMoving", true);
         }
         else
         {
             rb.velocity = Vector3.zero;
+            animator.SetBool("isMoving", false);
         }
     }
 
