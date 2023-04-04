@@ -53,6 +53,7 @@ public class EnemyAI : MonoBehaviour
         {
             Vector3 direction = player.position - transform.position;
             rb.velocity = direction.normalized * moveSpeed;
+            transform.LookAt(player);
             animator.SetBool("isMoving", true);
         }
         else
