@@ -6,7 +6,8 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 40f;
     [SerializeField] private float turnSpeed = 60f;
 
-    private Animator animator;  
+    private Animator animator;
+    public GameObject chaseCutscene;
 
     // Rigidbody component
     private Rigidbody rb;
@@ -51,6 +52,13 @@ public class CharacterMovement : MonoBehaviour
         else
         {
             animator.SetBool("isMoving", false);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("chaseTag"))
+        {
+            chaseCutscene.SetActive(true);
         }
     }
 }
