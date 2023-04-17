@@ -1,0 +1,300 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.13f1 (9e7d58001ecf) revision 10386776'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32687 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker10
+-projectPath
+C:/Users/arvau/Desktop/Prometheus Project/Prometheus_Project
+-logFile
+Logs/AssetImportWorker10.log
+-srvPort
+62018
+Successfully changed project path to: C:/Users/arvau/Desktop/Prometheus Project/Prometheus_Project
+C:/Users/arvau/Desktop/Prometheus Project/Prometheus_Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 97.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.13f1 (9e7d58001ecf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/arvau/Desktop/Prometheus Project/Prometheus_Project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 5700 XT (ID=0x731f)
+    Vendor:   ATI
+    VRAM:     8151 MB
+    Driver:   31.0.14037.1007
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.019041 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 88.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.776 seconds
+Domain Reload Profiling:
+	ReloadAssembly (777ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (554ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (122ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (341ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (74ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (89ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (115ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008546 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\arvau\Desktop\Prometheus Project\Prometheus_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\arvau\Desktop\Prometheus Project\Prometheus_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.202 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1202ms)
+		BeginReloadAssembly (224ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (129ms)
+		EndReloadAssembly (861ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (280ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (399ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (243ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3564 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (129.6 KB). Loaded Objects now: 4027.
+Memory consumption went from 127.3 MB to 127.2 MB.
+Total: 3.305900 ms (FindLiveObjects: 0.350900 ms CreateObjectMapping: 0.378700 ms MarkObjects: 2.462200 ms  DeleteObjects: 0.112800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15792.863078 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/air conditioner wall.fbx
+  artifactKey: Guid(ae9812275f0412b4c9f838a2e16f8f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/air conditioner wall.fbx using Guid(ae9812275f0412b4c9f838a2e16f8f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52045809fc51b4abdd3e9e980930fa4b') in 0.183228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/drain 2.fbx
+  artifactKey: Guid(8e7f3b7ed07559643b1d82f64ae4994f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/drain 2.fbx using Guid(8e7f3b7ed07559643b1d82f64ae4994f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e97d2ac7f95e749b183cf438cbbc978') in 0.019268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/BurgerSho_Sign.fbx
+  artifactKey: Guid(d616995adade3b44e859e01e16febbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/BurgerSho_Sign.fbx using Guid(d616995adade3b44e859e01e16febbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ad9af9d7c54825cb76d6c0bc404711') in 0.022789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Bus stop.fbx
+  artifactKey: Guid(89c3425c9ff526249a9bf0126e4a97f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Bus stop.fbx using Guid(89c3425c9ff526249a9bf0126e4a97f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b1c5fc8f906c87c0b34d6d8b7bd5bb') in 0.024488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Flower 1 organ 1.png
+  artifactKey: Guid(dff63f9af4a51274e886c803b053ec43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Flower 1 organ 1.png using Guid(dff63f9af4a51274e886c803b053ec43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16fafd9064a521231a3996bceebf37ed') in 0.037110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/platt 1 sign part.fbx
+  artifactKey: Guid(35b519e7f36671443b32ef1fba32f545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/platt 1 sign part.fbx using Guid(35b519e7f36671443b32ef1fba32f545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecaf38dc8fef9d52f801a598a73dc09') in 0.021798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/drain 1.fbx
+  artifactKey: Guid(413e1d7e930c5e343816c6421eead532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/drain 1.fbx using Guid(413e1d7e930c5e343816c6421eead532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28ad04ad2bb6a35f0fb5a5d9186ae1d') in 0.016658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/traffic_OBJ.png
+  artifactKey: Guid(0fa8506d184ec3646b272275067f1dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/traffic_OBJ.png using Guid(0fa8506d184ec3646b272275067f1dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c923c8aca511afe80441f92415c40081') in 0.018977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Traffic_light_3.fbx
+  artifactKey: Guid(3a4cae9c6e2634940bf673434c1580d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Traffic_light_3.fbx using Guid(3a4cae9c6e2634940bf673434c1580d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be68d222b99dcd4d688e2d5d2527246') in 0.121285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/pot_plant_leaf.png
+  artifactKey: Guid(cf21488ffdf03a249b361ac7b5f2d5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/pot_plant_leaf.png using Guid(cf21488ffdf03a249b361ac7b5f2d5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ba23554ae1f999b1226be5393b5416') in 0.013770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/bush.fbx
+  artifactKey: Guid(d0300cf9cefd50f4fb857811505e40f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/bush.fbx using Guid(d0300cf9cefd50f4fb857811505e40f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2371e760e09a530a52c76025a705b6f') in 0.022075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/can cola 2.png
+  artifactKey: Guid(72e1129b490397047a42f1a126238470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/can cola 2.png using Guid(72e1129b490397047a42f1a126238470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a42534789e1377b8901642de6945dc0') in 0.015908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Flower 1 red 1.png
+  artifactKey: Guid(9426e08bc3d7e6a4d90748f5a50c8419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Flower 1 red 1.png using Guid(9426e08bc3d7e6a4d90748f5a50c8419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141bcc504bdf1b1cdf90534974111629') in 0.014136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/shopping cart.fbx
+  artifactKey: Guid(668f78c22fd621541bed6c90815f36f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/shopping cart.fbx using Guid(668f78c22fd621541bed6c90815f36f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970718f2e3b1c66bee4012cba148d00d') in 0.018624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Wall 1.fbx
+  artifactKey: Guid(9a05625357b90ae48975e35e1dd3b51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Wall 1.fbx using Guid(9a05625357b90ae48975e35e1dd3b51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea8b5a6fa97c845491e9d788be689fc') in 0.023531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Flower 1 purple mix 1.png
+  artifactKey: Guid(ad6ea5a68d1b66f4faec6f50cd8d7b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Flower 1 purple mix 1.png using Guid(ad6ea5a68d1b66f4faec6f50cd8d7b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304e9347295afa3d63d099aec6e57487') in 0.012517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/flower 2.fbx
+  artifactKey: Guid(5aceaddc69c589c45b43eae532e681e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/flower 2.fbx using Guid(5aceaddc69c589c45b43eae532e681e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033d1cb9e978e6c4dc7b5d42fdab26d3') in 0.021336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Hydrant.fbx
+  artifactKey: Guid(e929ac57e943d3c489f18cb67b6b4ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Hydrant.fbx using Guid(e929ac57e943d3c489f18cb67b6b4ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c94404b56388f9e3a42f5f0ba0fa27') in 0.018141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Dynamic_power_pole_cable.fbx
+  artifactKey: Guid(db2ce2858abe7e2439337f36cb4c5fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Dynamic_power_pole_cable.fbx using Guid(db2ce2858abe7e2439337f36cb4c5fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114da32c4ba03996b1818265da019f05') in 0.037825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/bus stop pole texture 1.png
+  artifactKey: Guid(d44a52891cea8d74b9d897dee320c982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/bus stop pole texture 1.png using Guid(d44a52891cea8d74b9d897dee320c982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0fcbd1ff200ffb4d7747024a64ad46') in 0.015194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Power pole texture.png
+  artifactKey: Guid(17f86e4dd36b70049bfc6eed25860e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Power pole texture.png using Guid(17f86e4dd36b70049bfc6eed25860e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ff28bfe3dd76dbae233ecf9c366079') in 0.015131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/Wall 3.fbx
+  artifactKey: Guid(5794e1ddd5fca6041980543459f4c932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/Wall 3.fbx using Guid(5794e1ddd5fca6041980543459f4c932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2416fb1c27ee5aa7731b0d8d2c45d88') in 0.021690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/POLYGON city pack/Meshes,textures/props_FBX/street lamp 2.fbx
+  artifactKey: Guid(c676bc2cbcce204439e758464c03bcc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack/Meshes,textures/props_FBX/street lamp 2.fbx using Guid(c676bc2cbcce204439e758464c03bcc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e567d673c55cb8f1ffcffa12dd01814') in 0.022646 seconds 
