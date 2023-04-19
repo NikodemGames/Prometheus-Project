@@ -766,7 +766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4624960837996343786, guid: 20c5aef470f8978469fe56f8e89c23b6, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 4624960837996343786, guid: 20c5aef470f8978469fe56f8e89c23b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1292,7 +1292,7 @@ Transform:
   m_Children:
   - {fileID: 1905386120}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -120, z: 0}
 --- !u!1 &944298319
 GameObject:
@@ -2001,7 +2001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a579482ba252e42a15818ab7e96ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
+  moveSpeed: 60
   turnSpeed: 60
   chaseCutscene: {fileID: 2123098721}
 --- !u!65 &1231174070
@@ -4063,7 +4063,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &2001274358
 MonoBehaviour:
@@ -4755,7 +4755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4624960837996343786, guid: 20c5aef470f8978469fe56f8e89c23b6, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4624960837996343786, guid: 20c5aef470f8978469fe56f8e89c23b6, type: 3}
       propertyPath: m_LocalPosition.x
