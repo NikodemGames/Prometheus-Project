@@ -1,52 +1,61 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class QTESystem : MonoBehaviour
 {
-    public KeyCode[] keys; 
-    public float timeLimit = 4.0f; 
-    public bool active = false; 
+    public float timeLimit = 3f;
+    public bool qteActive = false;
+    
 
-
-    private float timer = 0.0f;
-    private int currentKey = 0;
 
     void Update()
     {
-        if (active)
+        if (qteActive)
         {
-            timer += Time.deltaTime;
-            if (timer > timeLimit)
+            
+            timeLimit -= Time.deltaTime / Time.timeScale;
+            if (timeLimit <= 0 || (Input.anyKeyDown && Input.GetKey(KeyCode.Q) == false))
             {
-                Fail();
+                EndQTE(false);               
             }
+            if (Input.GetKey(KeyCode.Q))
+            {
+                EndQTE(true);       
+            }
+            Time.timeScale = 0.05f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
 
-            if (Input.GetKeyDown(keys[currentKey]))
-            {
-                currentKey++;
-                if (currentKey >= keys.Length)
-                {
-                    Success();
-                }
-            }
+    }
+
+    public void StartQTE()
+    {
+        qteActive = true;
+        timeLimit = 3f;
+    }
+
+    private void EndQTE(bool success)
+    {
+        qteActive = false;
+        if (success)
+        {
+            Debug.Log("Holy Shmoly Macaroni you did it");
+            Time.timeScale = 1f;
+            //gameObject.SetActive(false);    
+            //Destroy(gameObject);
+        }
+        else
+        {
+            Debug.Log("XDD consider other games m8");
+            //gameObject.SetActive(false);
+            //Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
-    public void StartEvent()
-    {
-        active = true;
-        currentKey = 0;
-        timer = 0.0f;
-    }
-
-    private void Success()
-    {
-        active = false;
-        Debug.Log("Quick time event successful!");
-    }
-
-    private void Fail()
-    {
-        active = false;
-        Debug.Log("Quick time event failed.");
-    }
 }

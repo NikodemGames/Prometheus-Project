@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
@@ -13,20 +14,24 @@ public class EnemyAI : MonoBehaviour
     private Rigidbody rb;
     private bool isPlayerDetected = false;
     private Animator animator;
+    public GameObject catchQTE;
+    public PlayableDirector pD;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            catchQTE.SetActive(true);
+            pD.enabled = true;
+
         }
     }
-
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
-    }
+        pD.enabled = false;
+}
 
     private void FixedUpdate()
     {
