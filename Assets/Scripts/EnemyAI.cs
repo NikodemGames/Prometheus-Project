@@ -15,14 +15,15 @@ public class EnemyAI : MonoBehaviour
     private bool isPlayerDetected = false;
     private Animator animator;
     public GameObject catchQTE;
-    public PlayableDirector pD;
+    //The UI element
+    public GameObject QTEPrompt;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             catchQTE.SetActive(true);
-            pD.enabled = true;
+            QTEPrompt.SetActive(true);
 
         }
     }
@@ -30,8 +31,7 @@ public class EnemyAI : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
-        pD.enabled = false;
-}
+    }
 
     private void FixedUpdate()
     {
