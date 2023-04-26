@@ -17,6 +17,27 @@ public class EnemyAI : MonoBehaviour
     public GameObject catchQTE;
     //The UI element
     public GameObject QTEPrompt;
+    private bool thisone;
+
+
+    private void OnEnable()
+    {
+        QTESystem.OnQTEOutcome += HandleQTEOutcome;
+    }
+
+    private void OnDisable()
+    {
+        QTESystem.OnQTEOutcome -= HandleQTEOutcome;
+    }
+
+    private void HandleQTEOutcome(bool succeeded)
+    {
+        if (succeeded&&thisone)
+        {
+            gameObject.SetActive(false);
+            // Execute your logic here for a successful QTE
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,6 +45,7 @@ public class EnemyAI : MonoBehaviour
         {
             catchQTE.SetActive(true);
             QTEPrompt.SetActive(true);
+            thisone= true;
 
         }
     }

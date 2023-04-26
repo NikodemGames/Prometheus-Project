@@ -7619,7 +7619,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.16885954, y: 0.000000018961073, z: -0.0000000032484044, w: 0.98564017}
+  m_LocalRotation: {x: 0.16885954, y: -0.000000018961073, z: 0.0000000032484044, w: 0.98564017}
   m_LocalPosition: {x: 18.49, y: 4.53, z: -42.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9490,7 +9490,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317531309}
-  m_LocalRotation: {x: 0.16885954, y: 0.000000018961073, z: -0.0000000032484044, w: 0.98564017}
+  m_LocalRotation: {x: 0.16885954, y: -0.000000018961073, z: 0.0000000032484044, w: 0.98564017}
   m_LocalPosition: {x: 18.49, y: 4.53, z: -42.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10844,6 +10844,10 @@ PrefabInstance:
     - target: {fileID: 4624960837996343760, guid: 20c5aef470f8978469fe56f8e89c23b6, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624960837996343760, guid: 20c5aef470f8978469fe56f8e89c23b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4624960837996343761, guid: 20c5aef470f8978469fe56f8e89c23b6, type: 3}
       propertyPath: pD
@@ -15330,7 +15334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c4f24372c3f8543b9277ac3f1417e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 4
+  timeLimit: 3
   qteActive: 0
   QTS: {fileID: 1971707807}
   QTEPrompt: {fileID: 1971707804}

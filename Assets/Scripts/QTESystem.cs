@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,9 +9,12 @@ public class QTESystem : MonoBehaviour
     public QTETimeSlider QTS;
     public GameObject QTEPrompt;
 
+    public delegate void QTEOutcomeEventHandler(bool succeeded);
+    public static event QTEOutcomeEventHandler OnQTEOutcome;
+
     private void Start()
     {
-        QTS.SetSliderMaxValue(timeLimit); 
+        QTS.SetSliderMaxValue(timeLimit);
     }
 
     void Update()
@@ -25,12 +26,11 @@ public class QTESystem : MonoBehaviour
             QTS.SetSliderValue(timeLimit);
             if (timeLimit <= 0 || (Input.anyKeyDown && Input.GetKey(KeyCode.Q) == false))
             {
-                EndQTE(false);    
-                
+                EndQTE(false);
             }
             if (Input.GetKey(KeyCode.Q))
             {
-                EndQTE(true);       
+                EndQTE(true);
             }
 
         }
@@ -51,15 +51,15 @@ public class QTESystem : MonoBehaviour
             Debug.Log("Holy Shmoly Macaroni you did it");
             Time.timeScale = 1f;
             QTEPrompt.SetActive(false);
-            //gameObject.SetActive(false);    
-            //Destroy(gameObject);
+            OnQTEOutcome?.Invoke(true);
+            gameObject.SetActive(false);    
         }
         else
         {
             Debug.Log("XDD consider other games m8");
+            Time.timeScale = 1f;
             QTEPrompt.SetActive(false);
-            //gameObject.SetActive(false);
-            //Destroy(gameObject);
+            OnQTEOutcome?.Invoke(false);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
