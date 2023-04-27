@@ -9,6 +9,8 @@ public class QTESystem : MonoBehaviour
     public QTETimeSlider QTS;
     public GameObject QTEPrompt;
 
+    public GameObject gameOver;
+
     public delegate void QTEOutcomeEventHandler(bool succeeded);
     public static event QTEOutcomeEventHandler OnQTEOutcome;
 
@@ -56,12 +58,15 @@ public class QTESystem : MonoBehaviour
         }
         else
         {
+            gameOver.gameObject.SetActive(true);
             Debug.Log("XDD consider other games m8");
             Time.timeScale = 1f;
             QTEPrompt.SetActive(false);
             OnQTEOutcome?.Invoke(false);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+     
         }
     }
+
+    
 
 }
