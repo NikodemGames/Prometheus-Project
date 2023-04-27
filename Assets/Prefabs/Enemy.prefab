@@ -84,6 +84,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   player: {fileID: 0}
+  catchQTE: {fileID: 0}
+  QTEPrompt: {fileID: 0}
 --- !u!95 &8931314049129845653
 Animator:
   serializedVersion: 4
@@ -167,7 +169,8 @@ PrefabInstance:
       propertyPath: m_WarningMessage
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: 98b85bc7bdf88f0459578394d70bb3a4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98b85bc7bdf88f0459578394d70bb3a4, type: 3}
 --- !u!4 &5162691005766619808 stripped
 Transform:

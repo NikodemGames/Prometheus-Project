@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Apple;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
@@ -17,7 +18,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject catchQTE;
     //The UI element
     public GameObject QTEPrompt;
-    private bool thisone;
+    private bool thisone, captured;
 
 
     private void OnEnable()
@@ -32,11 +33,12 @@ public class EnemyAI : MonoBehaviour
 
     private void HandleQTEOutcome(bool succeeded)
     {
-        if (succeeded&&thisone)
+        if (succeeded && thisone)
         {
             gameObject.SetActive(false);
             // Execute your logic here for a successful QTE
         }
+        else captured = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -85,7 +87,7 @@ public class EnemyAI : MonoBehaviour
         }
 
         // Move towards player if detected
-        if (isPlayerDetected)
+        if (isPlayerDetected&& !captured)
         {
             Vector3 direction = player.position - transform.position;
             rb.velocity = direction.normalized * moveSpeed;
