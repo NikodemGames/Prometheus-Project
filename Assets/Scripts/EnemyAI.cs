@@ -36,9 +36,13 @@ public class EnemyAI : MonoBehaviour
         if (succeeded && thisone)
         {
             gameObject.SetActive(false);
+            captured = false;
             // Execute your logic here for a successful QTE
         }
-        else captured = true;
+        else if (!succeeded)
+        {
+            captured = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
