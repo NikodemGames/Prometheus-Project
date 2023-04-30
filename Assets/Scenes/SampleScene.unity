@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16810,7 +16810,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129359097}
-  m_LocalRotation: {x: 0.015971508, y: 0.9700608, z: -0.06648404, w: 0.23303838}
+  m_LocalRotation: {x: 0.01597151, y: 0.9700608, z: -0.06648406, w: 0.23303837}
   m_LocalPosition: {x: -14.99, y: 0.84, z: 3.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18425,8 +18425,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317531309}
-  m_LocalRotation: {x: 0.05059802, y: 0.9403506, z: -0.16110058, w: 0.29534268}
-  m_LocalPosition: {x: 18.175869, y: 4.63, z: -51.709023}
+  m_LocalRotation: {x: 0.16885953, y: -0.00000003284154, z: 0.0000000056264007, w: 0.98564017}
+  m_LocalPosition: {x: 15, y: 4.58, z: -29.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20834,7 +20834,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505480912}
-  m_LocalRotation: {x: 0.015577389, y: 0.09729215, z: -0.0015229702, w: 0.9951328}
+  m_LocalRotation: {x: 0.018911386, y: 0.80276424, z: -0.025495602, w: 0.5954511}
   m_LocalPosition: {x: -26.948, y: 0.68, z: 1.087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -28382,8 +28382,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757221544}
-  m_LocalRotation: {x: 0.2126185, y: 0.5885777, z: -0.16411726, w: 0.762519}
-  m_LocalPosition: {x: 0.58000183, y: 11.069999, z: -1.9700012}
+  m_LocalRotation: {x: 0.21261853, y: 0.5885777, z: -0.16411722, w: 0.762519}
+  m_LocalPosition: {x: -34.01181, y: 11.069999, z: -1.9739914}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28708,8 +28708,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Events:
-    m_Signals: []
-    m_Events: []
+    m_Signals:
+    - {fileID: 11400000, guid: fa82a497acc1310459e4c77e7670b165, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1787411369}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: Disable
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1790550616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2530615618114803133, guid: b6191c2ed93c41d49ba19c4c9cc02d1c, type: 3}
