@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class QTESystem : MonoBehaviour
     public bool qteActive = false;
     public QTETimeSlider QTS;
     public GameObject QTEPrompt;
+    public GameObject winCutScene;
 
     public GameObject gameOver;
 
@@ -55,7 +57,10 @@ public class QTESystem : MonoBehaviour
             Time.timeScale = 1f;
             QTEPrompt.SetActive(false);
             OnQTEOutcome?.Invoke(true);
-            gameObject.SetActive(false);    
+            gameObject.SetActive(false);
+            winCutScene.SetActive(true);
+            winCutScene.GetComponent<PlayableDirector>().Play();
+            
         }
         else
         {
