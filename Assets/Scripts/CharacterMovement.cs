@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float turnSpeed = 60f;
 
     private Animator animator;
+    public GameObject qteObject;
     public GameObject chaseCutscene;
 
     // Rigidbody component
@@ -59,6 +60,10 @@ public class CharacterMovement : MonoBehaviour
         if(other.gameObject.CompareTag("chaseTag"))
         {
             chaseCutscene.SetActive(true);
+        }
+        if (other.gameObject.CompareTag("QTETag"))
+        {
+            qteObject.SetActive(true);
         }
     }
 }

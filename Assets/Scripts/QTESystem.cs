@@ -23,6 +23,7 @@ public class QTESystem : MonoBehaviour
     {
         if (qteActive)
         {
+            QTEPrompt.SetActive(true);
             Time.timeScale = 0f;
             timeLimit -= Time.unscaledDeltaTime;
             QTS.SetSliderValue(timeLimit);

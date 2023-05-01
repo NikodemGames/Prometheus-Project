@@ -50,7 +50,7 @@ public class EnemyAI : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             catchQTE.SetActive(true);
-            QTEPrompt.SetActive(true);
+
             thisone= true;
 
         }
