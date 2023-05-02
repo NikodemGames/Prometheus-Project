@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
@@ -10,7 +11,12 @@ public class QTESystem : MonoBehaviour
     public QTETimeSlider QTS;
     public GameObject QTEPrompt;
     public GameObject winCutScene;
+    public GameObject jumpCutScene;
+    public GameObject jumpCutScene2;
+    public TextMeshProUGUI jump;
+    
 
+    public GameManager gameManager;
     public GameObject gameOver;
 
     public delegate void QTEOutcomeEventHandler(bool succeeded);
@@ -29,15 +35,35 @@ public class QTESystem : MonoBehaviour
             Time.timeScale = 0f;
             timeLimit -= Time.unscaledDeltaTime;
             QTS.SetSliderValue(timeLimit);
-            if (timeLimit <= 0 || (Input.anyKeyDown && Input.GetKey(KeyCode.Q) == false))
-            {
-                EndQTE(false);
-            }
-            if (Input.GetKey(KeyCode.Q))
-            {
-                EndQTE(true);
-            }
 
+            if (gameManager.isRoof)
+            {
+                
+                jump.text = "R";
+                if (timeLimit <= 0 || (Input.anyKeyDown && Input.GetKey(KeyCode.R) == false))
+                {
+                    EndQTE(false);
+                }
+                if (Input.GetKey(KeyCode.R))
+                {
+                    EndQTE(true);
+                }
+            }
+            
+            
+            else
+            {
+                
+                jump.text = "Q";
+                if (timeLimit <= 0 || (Input.anyKeyDown && Input.GetKey(KeyCode.Q) == false))
+                {
+                    EndQTE(false);
+                }
+                if (Input.GetKey(KeyCode.Q))
+                {
+                    EndQTE(true);
+                }
+            }
         }
 
     }
@@ -58,8 +84,21 @@ public class QTESystem : MonoBehaviour
             QTEPrompt.SetActive(false);
             OnQTEOutcome?.Invoke(true);
             gameObject.SetActive(false);
-            winCutScene.SetActive(true);
-            winCutScene.GetComponent<PlayableDirector>().Play();
+            if(!gameManager.isRoof)
+            {
+                winCutScene.SetActive(true);
+                winCutScene.GetComponent<PlayableDirector>().Play();
+            }
+            if (gameManager.isTrigger == false && gameManager.isRoof)
+            {
+                jumpCutScene.SetActive(true);
+                
+            }
+            else 
+            {
+                jumpCutScene2.SetActive(true);
+
+            }
             
         }
         else
@@ -71,8 +110,8 @@ public class QTESystem : MonoBehaviour
             OnQTEOutcome?.Invoke(false);
      
         }
-    }
 
-    
+
+    }
 
 }

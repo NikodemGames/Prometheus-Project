@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,13 @@ public class GameManager : MonoBehaviour
     public PlayableDirector sceneWin;
     public Rigidbody rb;
     public GameObject enemyWin;
+    public GameObject rain;
+    
+
+    
+
+    public bool isRoof;
+    public bool isTrigger;
     
 
 
@@ -20,6 +28,15 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (rain.transform.position.y > 10)
+        {
+            isRoof = true;
+        }
+        else
+        {
+            isRoof = false;
+        }
+        
         if (sceneOne.isActiveAndEnabled || sceneTwo.isActiveAndEnabled || sceneWin.isActiveAndEnabled)
         {
             rb.isKinematic = true;

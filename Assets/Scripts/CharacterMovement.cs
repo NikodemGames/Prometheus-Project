@@ -9,6 +9,7 @@ public class CharacterMovement : MonoBehaviour
     private Animator animator;
     public GameObject qteObject;
     public GameObject chaseCutscene;
+    public GameManager gameManager;
 
     // Rigidbody component
     private Rigidbody rb;
@@ -64,6 +65,10 @@ public class CharacterMovement : MonoBehaviour
         if (other.gameObject.CompareTag("QTETag"))
         {
             qteObject.SetActive(true);
+            if(other.GetComponent<triggerJump>() != null)
+            {
+                gameManager.isTrigger = true;
+            }
         }
     }
 }
