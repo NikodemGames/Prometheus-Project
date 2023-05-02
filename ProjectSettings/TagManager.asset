@@ -6,6 +6,7 @@ TagManager:
   tags:
   - chaseTag
   - QTETag
+  - GameWon
   layers:
   - Default
   - TransparentFX

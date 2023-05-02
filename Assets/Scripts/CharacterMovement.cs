@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -69,6 +70,10 @@ public class CharacterMovement : MonoBehaviour
             {
                 gameManager.isTrigger = true;
             }
+        }
+        if(other.gameObject.CompareTag("GameWon"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -2);
         }
     }
 }
