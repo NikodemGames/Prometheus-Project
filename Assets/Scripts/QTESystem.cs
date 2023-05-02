@@ -94,7 +94,7 @@ public class QTESystem : MonoBehaviour
                 jumpCutScene.SetActive(true);
                 
             }
-            else 
+            else if (gameManager.isTrigger == true)
             {
                 jumpCutScene2.SetActive(true);
 
