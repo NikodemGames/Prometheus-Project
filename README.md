@@ -1,3 +1,9 @@
+Controls: WASD for movement
+QTE events: Q for fighting enemies when prompted
+            R for jump on rooftops
+
+
+
 References
 255 pixel studios, 2020. assetstore.unity.com. [Online] 
 Available at: https://assetstore.unity.com/packages/3d/environments/urban/city-package-107224
