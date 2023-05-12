@@ -1,4 +1,4 @@
-Controls: WASD for movement
+Controls: WASD for movement ESC to skip cutscenes
 QTE events: Q for fighting enemies when prompted
             R for jump on rooftops
 
