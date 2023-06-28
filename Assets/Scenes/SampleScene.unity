@@ -23574,7 +23574,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855900553}
-  m_LocalRotation: {x: 0.055988632, y: 0.53130704, z: -0.035220694, w: 0.84459317}
+  m_LocalRotation: {x: 0.05597377, y: 0.5316634, z: -0.035244312, w: 0.8443689}
   m_LocalPosition: {x: 13.300456, y: 1.5934362, z: -20.695944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33703,7 +33703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a579482ba252e42a15818ab7e96ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 60
+  moveSpeed: 15
   turnSpeed: 60
   qteObject: {fileID: 1995066911}
   chaseCutscene: {fileID: 2123098721}
