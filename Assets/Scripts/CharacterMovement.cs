@@ -73,7 +73,7 @@ public class CharacterMovement : MonoBehaviour
         }
         if(other.gameObject.CompareTag("GameWon"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
         }
     }
 }
